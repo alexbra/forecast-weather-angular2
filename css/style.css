@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+div.wrapper {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+div.wrapper .page-header {
+    color: white;
+    background-color: #666;
+    padding: 10px; 
+    margin-bottom: 40px;
+}
+
+div.forecast-wrapper {
+    width: 540px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+div.forecast-wrapper .city-header {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+div.forecast-wrapper .edit-city-div {
+    padding: 10px 0;
+}
+
+div.forecast-wrapper a.edit-city {
+    font-size: 12px;
+    color: #eee;
+    cursor: pointer;
+    text-decoration: none;
+    font-style: italic;
+    padding: 5px 0 10px 0;
+}
+div.forecast-wrapper a.edit-city:hover {
+    color: #777;
+}
+ul.forecast-day-items{
+    list-style-type: none;
+    padding: 0px;
+    min-width: 620px;
+    text-align: center;
+}
+
+
+li.forecast-day-item {
+    padding: 10px;
+    float: left;
+    width: 70px;
+    font-size: small;
+    cursor: pointer;
+    color: #ccc;
+}
+
+
+li.forecast-day-item.active {
+    border: #eee 1px solid;
+    color: #666;
+}
+
+li.forecast-day-item img.icon {
+    width: 50px;
+    padding: 10px 0;
+}
+
+li.forecast-day-item span.temp {
+    color: #777;
+}
+
+div.selected-day {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.selected-day .general-info {
+    height: 60px;
+}
+
+div.selected-day .general-info span.summary {
+    font-size: 13px;
+    padding-top: 5px;
+
+}
+
+.selected-day .info-block {
+    float: left;
+    width: 65%;
+    height: 100%;
+}
+
+.selected-day .info-block.right {
+    float: right;
+    width: 35%;
+    height: 100%;
+}
+
+.selected-day .info-block .main-info {
+    width:100%; 
+    height: 75px; 
+    padding: 20px 0;
+}
+
+
+.selected-day .info-block .additional-info {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.5;
+    color: #777;
+}
+
+.selected-day .info-block .additional-info img.windarrow {
+    width: 22px;
+    margin-bottom: -5px;
+}
+
+.info-block img.icon {
+    width: 70px;
+    margin-right: 10px;
+    margin-top: 5px;
+    float: left;
+    vertical-align: middle;
+}
+
+.info-block .temp {
+    font-size: 70px;
+}
+
+.info-block .temp .sign {
+    font-size: 25px;
+    padding-top: 10px;
+    float: left;
+    color: #999;
+}
