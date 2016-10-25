@@ -9,7 +9,8 @@
     "removeComments": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
-    "outDir": "./js",
+    "rootDir": "./app",
+    "outDir": "./js/app",
     "typeRoots": [
       "./node_modules/@types/"
     ]

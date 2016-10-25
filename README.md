@@ -6,7 +6,7 @@ By default, displayed weather at Seattle, WA.
 ALso you can choose 3 other cities. 
 In a future, I will add geolocation to set a city at a start of application.
 
-Demo on plunker
+<a href="https://run.plnkr.co/plunks/ZY4GWMeiIejiDA1CFNGy/">Demo on plunker</a>
 
 ## Prerequisites
 
@@ -42,23 +42,3 @@ Application contains such parts as:
 - forecast service component to handle all server requests and responses
 - Forecast and Day models
 - constants stored in separeted file
-
-### Unit Tests
-
-TypeScript unit-tests are usually in the `app` folder. Their filenames must end in `.spec`.
-
-Look for the example `app/app.component.spec.ts`.
-Add more `.spec.ts` files as you wish; we configured karma to find them.
-
-Run it with `npm test`
-
-That command first compiles the application, then simultaneously re-compiles and runs the karma test-runner.
-Both the compiler and the karma watch for (different) file changes.
-
-Shut it down manually with Ctrl-C.
-
-Test-runner output appears in the terminal window.
-We can update our app and our tests in real-time, keeping a weather eye on the console for broken tests.
-Karma is occasionally confused and it is often necessary to shut down its browser or even shut the command down (Ctrl-C) and
-restart it. No worries; it's pretty quick.
-

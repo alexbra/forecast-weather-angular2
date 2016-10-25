@@ -24,8 +24,7 @@ import { CITIES } from './constants';
                     [attr.selected] = "i == curCityId ? true : null">
                 {{c.name}}</option>
             </select>
-        </div>
-        
+        </div>        
         <component-selected-day *ngIf = "selectedDay" [day] = "selectedDay" ></component-selected-day>
         <ul class="forecast-day-items">
             <li class="forecast-day-item"
@@ -33,7 +32,6 @@ import { CITIES } from './constants';
                 *ngFor="let day of days | slice:0:6"
                 (click) = "onSelectDay(day)">
             {{ day.weekday.substr(0,3)}} {{day.date}} <br />
-
             <img [src]="getIcon(day.icon)" class="icon" /><br />
             <span class="temp"><b>{{day.temperatureMax}}&deg;</b> {{day.temperatureMin}}&deg;</span>
             </li>
@@ -48,7 +46,7 @@ export class ForecastWidgetComponent implements OnInit, OnChanges {
     @Input() latitude: string;
     @Input() longtitude: string;
     @Output() changeCity: EventEmitter<any> = new EventEmitter();
-    
+
     listCities: any[] = CITIES;
     forecast: Forecast;
     days: Day[];
