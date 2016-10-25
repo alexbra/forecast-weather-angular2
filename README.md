@@ -23,7 +23,7 @@ Older versions produce errors.
 
 Clone this repo into new project folder (e.g., `my-proj`).
 ```bash
-git clone  https://github.com/angular/quickstart  my-proj
+git clone  https://github.com/alexbra/forecast-weather-angular2  my-proj
 cd my-proj
 npm run
 ```
